@@ -4,7 +4,7 @@ New repository for Python
 
 ### Pandas package
 
-- [Pandas package](https://github.com/JuanmaMN/Python/tree/master/pandas)
+-  Link to my folder with analyses using [Pandas package](https://github.com/JuanmaMN/Python/tree/master/pandas)
 
 
 
