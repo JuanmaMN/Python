@@ -11,3 +11,17 @@ import pandas as pd
 ########################################################################
 
 nba = pd.read_excel("NBA_team_data.xlsx")
+
+
+########################################################################
+##################         Read the data              ##################   
+########################################################################
+
+nba.head(5)
+nba.tail(5)
+nba.columns  #to see all columns within our data frame. Name columns only.
+nba.dtypes
+nba.describe()
+nba.shape
+
+View(nba)
