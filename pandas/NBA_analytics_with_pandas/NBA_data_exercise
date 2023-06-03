@@ -24,4 +24,34 @@ nba.shape
 View(nba)
 
 
-# In progress
+# ----------------        Data analysis       ---------------- 
+
+# Add a new column displaying the difference between W and L
+
+nba['difference'] = nba['W']-nba['L']
+
+nba['Total_games'] = nba.iloc[:,3:5].sum(axis=1). # Create a new column to add up games won and lost
+
+nba['Total'] = nba.iloc[:,3:5].sum(axis=1) # We need to include one more column at the end. I want to add up columns 3 and 4
+
+
+# Select certain columns
+
+nba = nba [['TEAM','GP']]
+
+nba2 = nba[['TEAM']]
+
+
+# group by one column
+
+nba3 = nba.groupby(['Season']).sum()
+
+
+# group by one column and more operations
+
+nba_2 = nba[['TEAM','PTS']]
+nba_3 = nba_2.groupby(['TEAM']).sum().sort_values('PTS', ascending = False)
+nba_3_one_line=nba[['TEAM','PTS']].groupby(['TEAM']).sum().sort_values('PTS',ascending=False)
+
+
+# More to come
