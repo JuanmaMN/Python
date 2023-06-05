@@ -34,24 +34,30 @@ nba['Total_games'] = nba.iloc[:,3:5].sum(axis=1). # Create a new column to add u
 
 nba['Total'] = nba.iloc[:,3:5].sum(axis=1) # We need to include one more column at the end. I want to add up columns 3 and 4
 
-
-# Select certain columns
+# Select columns TEAM and GP (games played)
 
 nba = nba [['TEAM','GP']]
 
 nba2 = nba[['TEAM']]
 
-
-# group by one column
+# group by one column and sum
 
 nba3 = nba.groupby(['Season']).sum()
-
 
 # group by one column and more operations
 
 nba_2 = nba[['TEAM','PTS']]
 nba_3 = nba_2.groupby(['TEAM']).sum().sort_values('PTS', ascending = False)
 nba_3_one_line=nba[['TEAM','PTS']].groupby(['TEAM']).sum().sort_values('PTS',ascending=False)
+nba4 = nba[['TEAM','PTS', 'BLK']].groupby(['TEAM']).sum(['PTS', 'BLK']).sort_values('PTS', ascending=False)
 
+#filter by Miami and Lakers and then group by team and sum points
 
-# More to come
+nba_filter_ML = nba[['TEAM', 'PTS']]
+
+nba_filter_ML2= nba_filter_ML.loc[
+  (nba.TEAM =='Miami Heat') | (nba.TEAM == 'Los Angeles Lakers'),
+  :
+]
+
+nba_filter_ML3 = nba_filter_ML2.groupby(['TEAM']).sum('PTS').sort_values('PTS', ascending = False)
