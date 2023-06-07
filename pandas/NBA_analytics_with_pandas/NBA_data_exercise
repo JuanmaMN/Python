@@ -1,18 +1,18 @@
 # Note: This code has been run on Posit (previously known as R Studio). I saved the "NBA team data" file in the working directory.
 
 
-# ----------------    Import pandas package    ---------------- 
+# ----------------    **Import pandas package**    ---------------- 
 
 import pandas as pd
 
 
-# ----------------       Import dataset         ---------------- 
+# ----------------       **Import dataset**         ---------------- 
 
 
 nba = pd.read_excel("NBA_team_data.xlsx")
 
 
-# ----------------        Read the data         ---------------- 
+# ----------------        **Read the data**         ---------------- 
 
 
 nba.columns  # column labels of the DataFrame
