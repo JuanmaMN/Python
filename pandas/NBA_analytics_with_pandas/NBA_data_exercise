@@ -1,18 +1,18 @@
 # Note: This code has been run on Posit (previously known as R Studio). I saved the "NBA team data" file in the working directory.
 
 
-# ----------------    **Import pandas package**    ---------------- 
+# ----------------    Import pandas package    ---------------- 
 
 import pandas as pd
 
 
-# ----------------       **Import dataset**         ---------------- 
+# ----------------       Import dataset         ---------------- 
 
 
 nba = pd.read_excel("NBA_team_data.xlsx")
 
 
-# ----------------        **Read the data**         ---------------- 
+# ----------------        Read the data         ---------------- 
 
 
 nba.columns  # column labels of the DataFrame
@@ -50,9 +50,13 @@ nba.pop('W') # Return column and drop from dataframe
 
 nba['difference'] = nba['W']-nba['L']
 
-nba['Total_games'] = nba.iloc[:,3:5].sum(axis=1). # Create a new column to add up games won and lost
+# Create a new column to add up games won and lost
 
-nba['Total'] = nba.iloc[:,3:5].sum(axis=1) # We need to include one more column at the end. I want to add up columns 3 and 4
+nba['Total_games'] = nba.iloc[:,3:5].sum(axis=1) 
+
+# We need to include one more column at the end. I want to add up columns 3 and 4
+
+nba['Total'] = nba.iloc[:,3:5].sum(axis=1) 
 
 # Select columns TEAM and GP (games played)
 
@@ -71,7 +75,7 @@ nba_3 = nba_2.groupby(['TEAM']).sum().sort_values('PTS', ascending = False)
 nba_3_one_line=nba[['TEAM','PTS']].groupby(['TEAM']).sum().sort_values('PTS',ascending=False)
 nba4 = nba[['TEAM','PTS', 'BLK']].groupby(['TEAM']).sum(['PTS', 'BLK']).sort_values('PTS', ascending=False)
 
-#filter by Miami and Lakers and then group by team and sum points
+# filter by Miami and Lakers and then group by team and sum points
 
 nba_filter_ML = nba[['TEAM', 'PTS']]
 
@@ -118,4 +122,48 @@ nba_filter_ML3 = nba_filter_ML2.groupby(['TEAM']).sum('PTS').sort_values('PTS', 
 # Rename a column
 
 nba.rename(columns={"PTS":"Points"})
+
 nba.rename(columns={"TEAM": "team"})
+
+
+
+# Renama multiple columns at the same time
+
+nba = nba.rename(columns = 
+        {"W": "Wins",
+        "TEAM": "Team"}
+        )
+        
+   
+# Replace one value
+
+nba=nba.replace('Miami Heat', 'MIA')
+
+# Replace multiple values
+
+nba=nba.replace(
+                ['Miami Heat', 'Milwaukee Bucks','Boston Celtics'],
+                ['MIA', 'MIL', 'BOS']
+                )
+
+# Remove duplicates - #It will remove duplicates in W column keeping the last 
+  
+nba=nba.drop_duplicates(subset=['W'], keep='last').  
+
+# Drop columns
+
+nba = nba.drop(columns = ['PTS','W'])
+
+# Drop NA
+
+nba.dropna() 
+
+
+# Check if NA
+
+nba.isna()
+
+# Fill the NA with 0
+
+nba.fillna(0)
+  
