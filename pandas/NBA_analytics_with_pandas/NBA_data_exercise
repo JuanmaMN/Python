@@ -43,6 +43,17 @@ nba_copy = nba.copy() # Create a copy of the dataframe
 
 nba.pop('W') # Return column and drop from dataframe
 
+nba.nlargest(3, 'W')  # select the top three in Wins
+
+nba.nlargest(3, 'W', keep = 'last') # select the top three in wins and keep all duplicated items
+
+nba.nlargest(3, ['W', 'PTS']) # select the top three based on two columns
+
+nba.nsmallest(3, 'W')
+
+nba.nsmallest(3, 'W', keep = 'last')
+
+nba.nsmallest(3, ['W','PTS'])
 
 # ----------------        Data analysis       ---------------- 
 
@@ -74,6 +85,10 @@ nba_2 = nba[['TEAM','PTS']]
 nba_3 = nba_2.groupby(['TEAM']).sum().sort_values('PTS', ascending = False)
 nba_3_one_line=nba[['TEAM','PTS']].groupby(['TEAM']).sum().sort_values('PTS',ascending=False)
 nba4 = nba[['TEAM','PTS', 'BLK']].groupby(['TEAM']).sum(['PTS', 'BLK']).sort_values('PTS', ascending=False)
+
+# Total number of points in the season
+
+nba[['Season','PTS']].groupby(['Season']).sum('PTS')  
 
 # filter by Miami and Lakers and then group by team and sum points
 
@@ -107,6 +122,8 @@ nba=nba.sort_values('PTS', ascending = False)
 nba=nba.sort_values(by=['W','PTS'], ascending=False)
 
 nba.sort_values(by=['W','PTS'], ascending=False,inplace=True) #inplace can be used as well
+
+nba.sort_values(by=['W','PTS'], ascending = False, na_position = 'first')  # Put NAs first
 
 # Group by 
 
@@ -148,7 +165,10 @@ nba=nba.replace(
 
 # Remove duplicates - #It will remove duplicates in W column keeping the last 
   
-nba=nba.drop_duplicates(subset=['W'], keep='last').  
+nba=nba.drop_duplicates(subset=['W'], keep='last')
+
+nba = nba.drop_duplicates(subset=['W','PTS'], keep = 'last') #Drop duplicates in two columns
+
 
 # Drop columns
 
