@@ -174,10 +174,18 @@ nba = nba.drop_duplicates(subset=['W','PTS'], keep = 'last') #Drop duplicates in
 
 nba = nba.drop(columns = ['PTS','W'])
 
+nba = nba.drop([0,1]) # drop first two columns
+
+
 # Drop NA
 
 nba.dropna() 
 
+nba.dropna(subset=['W'])
+
+# Check non-missing values
+
+nba.notna()
 
 # Check if NA
 
@@ -187,3 +195,36 @@ nba.isna()
 
 nba.fillna(0)
   
+# Check notnull
+
+nba.notnull()
+
+# Isnull
+
+nba.isnull()
+nba.isnull().sum(). # number of rows with Null values
+
+
+# Access a single value for a row/column label pair. Loc can be used as well.
+
+nba.at[0,'W'] # It will return the first win 
+
+nba.at[1,'W'] # It will return the second win number 
+
+
+# Access a single value for a row/column pair by integer position. iloc can be used as well
+
+nba.iat[1,1]
+
+
+# Filter - Subset the dataframe rows or columns according to the specified index labels.
+
+nba.filter(['W','PTS']) # Extract two columns
+
+nba.filter(regex='W$', axis=1)   
+
+nba.filter(like='W', axis=1) # Extract columns which contains W in their name - Axis = 1(columns)
+
+# Take  -Return the elements in the given positional indices along an axis 
+
+nba.take([0,3]) # Select 0th and 3rd rows
