@@ -1,6 +1,6 @@
 ## Welcome to my Python repository
 
-New repository for Python
+New repository for Python.
 
 ### Pandas package
 
