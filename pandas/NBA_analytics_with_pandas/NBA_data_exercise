@@ -228,3 +228,28 @@ nba.filter(like='W', axis=1) # Extract columns which contains W in their name - 
 # Take  -Return the elements in the given positional indices along an axis 
 
 nba.take([0,3]) # Select 0th and 3rd rows
+
+
+
+# Query
+
+nba.query('W > L') # Find the teams with more victories than losses
+
+nba.query('W == 42') # Find the teams with 42 victories
+
+# Same as above
+
+nba.loc[
+  (nba.W == 42),
+  :
+]
+
+nba.query('W >= 42') # Find the teams with 42 or more victories
+
+# Same as above
+
+nba.loc[
+  (nba.W >= 42),
+  :
+]
+
