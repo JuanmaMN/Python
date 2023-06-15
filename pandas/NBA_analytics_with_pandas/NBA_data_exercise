@@ -264,3 +264,7 @@ nba.query('W >= 42 & TEAM.str.contains("M|G|L")') # Find the teams with 42 or mo
 # Select Teams with more than 42 victories and the team name ends with T
 
 nba.query('W >= 42 & TEAM.str.endswith("t")')
+
+
+
+
