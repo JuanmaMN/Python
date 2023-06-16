@@ -265,6 +265,6 @@ nba.query('W >= 42 & TEAM.str.contains("M|G|L")') # Find the teams with 42 or mo
 
 nba.query('W >= 42 & TEAM.str.endswith("t")')
 
-
+# More to come
 
 
