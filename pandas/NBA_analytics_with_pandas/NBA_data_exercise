@@ -3,10 +3,8 @@
 
 # ----------------    Import pandas package    ---------------- 
 
-```python
-
+```
 import pandas as pd
-
 ```
 
 
