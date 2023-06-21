@@ -3,7 +3,9 @@
 
 # ----------------    Import pandas package    ---------------- 
 
-```import pandas as pd```
+```
+import pandas as pd
+```
 
 
 # ----------------       Import dataset         ---------------- 
