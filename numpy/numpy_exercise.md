@@ -19,13 +19,15 @@ print(a)
 ```
 
 # The attribute size is the number of elements in the array. As there are 5 elements, the result is 5.
+
 a.size 
 
-
 # The attribute “ndim” represents the number of array dimensions or the rank of the array, in this case one.	
+
 a.ndim 
 
 # The attribute "shape” is a tuple of integers indicating the size of the array in each dimension.
+
 a.shape 
 
 ```
@@ -52,7 +54,6 @@ a+1
 
 ```
 a = [[1,2,3], [4,5,6], [7,8,9]]
-
 A = np.array(a)
 print(A)
 ```
@@ -74,6 +75,5 @@ A[1,2]   # it will return 6
 A[0][0] # it will return 1
 A[0,0:2]  # it will return array([1, 2])
 ```
-
 
 
