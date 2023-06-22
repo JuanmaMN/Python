@@ -8,3 +8,6 @@ New repository for Python analyses.
 
 -  Pandas practice with NBA data [link](https://github.com/JuanmaMN/Python/tree/master/pandas/NBA_analytics_with_pandas).    
 
+
+
+### Numpy package
