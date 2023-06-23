@@ -70,10 +70,20 @@ A.ndim
 ### Indexing and slicing
 
 ```
-A[0,0]   # it will return 1
-A[1,2]   # it will return 6
-A[0][0] # it will return 1
-A[0,0:2]  # it will return array([1, 2])
+A[0,0]      # it will return 1
+A[1,2]      # it will return 6
+A[0][0]     # it will return 1
+A[0,0:2]    # it will return array([1, 2])
+
+A[A < 4]    # Print all of the values in the array that are less than 4
+A[A>=4]     # Print all of the values in the array that are equal to or greater than 4
+A[A%2==0]   # You can select elements that are divisible by 2
+
+# Or you can select elements that satisfy two conditions using the & and | operators:
+
+A[(A>2) & (A < 11)]
+A[(A>2) | (A < 11)]
+
 ```
 
 
