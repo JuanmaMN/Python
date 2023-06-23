@@ -19,23 +19,23 @@ nba = pd.read_excel("NBA_team_data.xlsx")
 
 
 ```
-nba.columns  # column labels of the DataFrame
+nba.columns                            # column labels of the DataFrame
 
-nba.info     # print a consice summary of a DataFrame
+nba.info                               # print a consice summary of a DataFrame
 
-nba.dtypes   # Return the dtypes in the DataFrame.
+nba.dtypes                             # Return the dtypes in the DataFrame.
 
 nba.select_dtypes(include='float64')   # Return a subset of the DataFrame’s columns based on the column dtypes.
 
 nba.select_dtypes(exclude='float64')   # I have four 'float64' columns (WIN%, FG%, 3P%, FT%) which won't return
 
-nba.values  # Return a Numpy representation of the DataFrame
+nba.values                             # Return a Numpy representation of the DataFrame
 
-nba.ndim    # Return an int representing the number of axes / array dimensions.
+nba.ndim                               # Return an int representing the number of axes / array dimensions.
 
-nba.size    # Return an int representing the number of elements in this object.
+nba.size                               # Return an int representing the number of elements in this object.
 
-nba.shape   # Return a tuple representing the dimensionality of the DataFrame. (Number of columns, number of rows)
+nba.shape                              # Return a tuple representing the dimensionality of the DataFrame. (Number of columns, number of rows)
 
 nba.head(5) # Return the first 5 rows
 
