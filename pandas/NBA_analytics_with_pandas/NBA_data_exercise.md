@@ -99,8 +99,11 @@ nba3 = nba.groupby(['Season']).sum()
 
 ```
 nba_2 = nba[['TEAM','PTS']]
+
 nba_3 = nba_2.groupby(['TEAM']).sum().sort_values('PTS', ascending = False)
+
 nba_3_one_line=nba[['TEAM','PTS']].groupby(['TEAM']).sum().sort_values('PTS',ascending=False)
+
 nba4 = nba[['TEAM','PTS', 'BLK']].groupby(['TEAM']).sum(['PTS', 'BLK']).sort_values('PTS', ascending=False)
 ```
 
@@ -240,7 +243,6 @@ nba.notna()
 nba.isna()
 ```
 
-
 #### Fill the NA with 0
 
 ```
@@ -257,6 +259,7 @@ nba.notnull()
 
 ```
 nba.isnull()
+
 nba.isnull().sum(). # number of rows with Null values
 ```
 
@@ -290,7 +293,6 @@ nba.filter(like='W', axis=1) # Extract columns which contains W in their name - 
 nba.take([0,3]) # Select 0th and 3rd rows
 ```
 
-
 #### Query
 
 ```
@@ -298,7 +300,6 @@ nba.query('W > L') # Find the teams with more victories than losses
 
 nba.query('W == 42') # Find the teams with 42 victories
 ```
-
 
 #### Same as above
 
@@ -327,7 +328,6 @@ nba.loc[
 nba.query('W >= 42 & TEAM.str.startswith("M")') # Find the teams with 42 or more victories
 ```
 
-
 #### Select Teams with more than 42 victories and the team names contain M  G L
 
 ```
@@ -341,5 +341,4 @@ nba.query('W >= 42 & TEAM.str.endswith("t")')
 ```
 
 #### More to come
-
 
