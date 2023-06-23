@@ -37,21 +37,21 @@ nba.size                               # Return an int representing the number o
 
 nba.shape                              # Return a tuple representing the dimensionality of the DataFrame. (Number of columns, number of rows)
 
-nba.head(5) # Return the first 5 rows
+nba.head(5)                            # Return the first 5 rows
 
-nba.tail(5) # Return the last 5 rows
+nba.tail(5)                            # Return the last 5 rows
 
-nba.describe() # Generate descriptive statistics.
+nba.describe()                         # Generate descriptive statistics.
 
-nba_copy = nba.copy() # Create a copy of the dataframe
+nba_copy = nba.copy()                  # Create a copy of the dataframe
 
-nba.pop('W') # Return column and drop from dataframe
+nba.pop('W')                           # Return column and drop from dataframe
 
-nba.nlargest(3, 'W')  # select the top three in Wins
+nba.nlargest(3, 'W')                   # select the top three in Wins
 
-nba.nlargest(3, 'W', keep = 'last') # select the top three in wins and keep all duplicated items
+nba.nlargest(3, 'W', keep = 'last')    # select the top three in wins and keep all duplicated items
 
-nba.nlargest(3, ['W', 'PTS']) # select the top three based on two columns
+nba.nlargest(3, ['W', 'PTS'])          # select the top three based on two columns
 
 nba.nsmallest(3, 'W')
 
