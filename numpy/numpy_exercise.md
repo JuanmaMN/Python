@@ -28,7 +28,22 @@ a.ndim
 
 # The attribute "shape” is a tuple of integers indicating the size of the array in each dimension.
 
-a.shape 
+a.shape
+
+# Get Type
+a.dtype
+
+
+```
+
+### Change type of the array
+
+```
+a2 = np.array([1, 2, 3, 4, 5])
+a.dtype  # This will be an integer
+
+float_a = a.astype(np.float64)
+float_a.dtype  # Converted to float64
 
 ```
 
