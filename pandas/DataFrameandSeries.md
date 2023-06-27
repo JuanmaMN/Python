@@ -71,5 +71,53 @@ columns = ['col1','col3', 'col4', 'col2']
 
 seriesobject4 = pd.Series(data, index = columns)
 
+```
+
+## Series
+
+
+### Create dataframe
 
 ```
+data = {
+  'team': ['ABC', 'DEF', 'GHI'],
+  'year': [2000, 2010, 2020],
+  'mark': ['Good', 'Average', 'Very good']
+}
+
+dataframe = pd.DataFrame(data)
+```
+
+
+
+```
+### the head method selects only the first five rows
+
+dataframe.head()
+
+#### Arrange columns
+
+dataframe = pd.DataFrame(data, columns=['year', 'team','mark'])
+
+### Select one column
+
+dataframe.team
+
+dataframe['year']
+
+### Create a column
+
+dataframe['newcolumn'] = 'AAA'
+
+dataframe['newcolumnarange']= np.arange(3)
+
+### Delete a column
+
+del dataframe['newcolumn']
+
+### Transpose the datafarme
+
+dataframe.T
+
+```
+
