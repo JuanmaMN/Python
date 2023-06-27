@@ -37,7 +37,7 @@ a.dtype
 
 ```
 
-### Change type of the array
+#### Change type of the array
 
 ```
 
@@ -49,14 +49,14 @@ float_a.dtype  # Converted to float64
 
 ```
 
-### Indexing and slicing
+#### Indexing and slicing
 
 ```
 a[0]
 a[2:3]
 ```
 
-### Basic operations
+#### Basic operations
 
 ```
 a.mean()
@@ -84,7 +84,7 @@ A.ndim
 
 
 
-### Indexing and slicing
+#### Indexing and slicing
 
 ```
 A[0,0]      # it will return 1
@@ -109,26 +109,26 @@ A[(A>2) | (A < 11)]
    
 
 
-### Create an array filled with 0’s:
+#### Create an array filled with 0’s:
 
 ```
 np.zeros(2)
 ```
 
-### Create an array filled with 1’s:
+#### Create an array filled with 1’s:
 
 ```
 np.ones(2)
 ```
 
 
-### Create an empty array with 2 elements
+#### Create an empty array with 2 elements
 
 ```
 np.empty(2)
 ```
 
-### Create an array with a range of elements
+#### Create an array with a range of elements
 
 ```
 np.arange(4)
@@ -136,7 +136,7 @@ np.arange(4)
 np.arange(2, 9, 2)
 ```
 
-### You can also use np.linspace() to create an array with values that are spaced linearly in a specified interval
+#### You can also use np.linspace() to create an array with values that are spaced linearly in a specified interval
 
 ```
 np.linspace(0, 10, num=5)
