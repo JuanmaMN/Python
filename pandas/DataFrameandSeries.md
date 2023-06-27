@@ -31,17 +31,20 @@ seriesobject.index
 seriesobject2 = pd.Series([1,5,-2,-3], index=['a','b','c','d'])
 
 seriesobject2.values
+
 seriesobject2.index
 
 
 # Select a value 
 
 seriesobject2[0]
+
 seriesobject2['a']
 
 # Select several value 
 
 seriesobject2[0:2]
+
 seriesobject2[['c','b']]
 
 # Change value
