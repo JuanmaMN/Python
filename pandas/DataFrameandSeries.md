@@ -2,7 +2,7 @@
 -- Note: This code has been run on Posit (previously known as R Studio).
 
 
-##  Import  pandas numpy package    
+#  Import  pandas numpy package    
 
 ```
 import pandas as pd
@@ -12,7 +12,7 @@ import numpy as np
 ```
 
 
-## Series
+# Series
    
 
 ```
