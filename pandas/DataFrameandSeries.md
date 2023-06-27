@@ -24,7 +24,7 @@ seriesobject.index
 
 ```
 
-```
+
 
 ### Creatae a Series with an index identying each data point with a label
 
