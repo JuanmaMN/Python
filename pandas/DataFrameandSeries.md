@@ -89,7 +89,7 @@ seriesobject4 = pd.Series(data, index = columns)
 
 ```
 
-## Series
+# Data Frame
 
 
 ### Create dataframe
@@ -106,7 +106,6 @@ dataframe = pd.DataFrame(data)
 
 
 
-```
 ### The head method selects only the first five rows
 
 ```
