@@ -149,12 +149,12 @@ dataframe.T
 
 
 
-#### Indexing, Selection, and Filtering
+## Indexing, Selection, and Filtering
 
+
+#### Bring the same dataframe
 
 ```
-
-### Bring the same dataframe
 
 data = {
   'team': ['ABC', 'DEF', 'GHI'],
@@ -163,14 +163,22 @@ data = {
 }
 
 data = pd.DataFrame(data, index=['Good', 'Average', 'Very good'])
+```
 
+#### Filter the data
 
+```
 data['year']                # Select year column
 data[['year', 'mark']]      # Select year and mark columns
 data[:2]                    # Select first two rows
 data[data.mark=='Good']     # Select row when the mark is 'Good'
 data[data['year'] == 2000]  # Select row when the year is 2000
 
+```
+
+#### Filter the data with loc and iloc
+
+```
 # Select 'Good' mark row and year and mark columns
 
 data.loc[
