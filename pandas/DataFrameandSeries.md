@@ -202,3 +202,28 @@ data.iloc[0,[1,2]]
 data.iloc[[1,2],[2,0,1]]
 
 ```
+
+## Sorting and Ranking 
+
+
+#### sort_index()
+
+
+```
+data.sort_index()
+
+data.sort_index(axis = 1)
+
+data.sort_index(axis = 0)
+
+```
+
+#### sort_values()
+
+
+```
+data.sort_values(by = 'year')                  # sort by column year in ascending order
+
+data.sort_values(by='year', ascending=False)  # sort by column year in ascending order
+
+```
