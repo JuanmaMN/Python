@@ -227,3 +227,31 @@ data.sort_values(by = 'year')                  # sort by column year in ascendin
 data.sort_values(by='year', ascending=False)  # sort by column year in ascending order
 
 ```
+
+
+## Binning 
+
+#### Create the dataframe
+
+```
+data = {
+  'team': ['ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQR', 'STU' , 'VWX', 'YZ'],
+  'year': [2000, 2010, 2020,2000, 2010, 2020,2000, 2010, 2020],
+  'mark': ['Good', 'Average', 'Very good','Good', 'Average', 'Very good','Good', 'Average', 'Very good'],
+  'amount': [10,5,27,25,12,3,39,17,7]
+}
+
+
+data = pd.DataFrame(data)
+
+```
+#### Create and assign the bins with a new column
+
+```
+bins=np.linspace(min(data.amount),max(data.amount),4)
+
+group_names=["Low", "Medium", "High"]
+
+data['bin'] = pd.cut(data.amount, bins, labels = group_names,include_lowest=True)
+```
+
