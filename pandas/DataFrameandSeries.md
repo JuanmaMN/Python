@@ -146,3 +146,51 @@ del dataframe['newcolumn']
 ```
 dataframe.T
 ```
+
+
+
+#### Indexing, Selection, and Filtering
+
+
+```
+
+### Bring the same dataframe
+
+data = {
+  'team': ['ABC', 'DEF', 'GHI'],
+  'year': [2000, 2010, 2020],
+  'mark': ['Good', 'Average', 'Very good']
+}
+
+data = pd.DataFrame(data, index=['Good', 'Average', 'Very good'])
+
+
+data['year']                # Select year column
+data[['year', 'mark']]      # Select year and mark columns
+data[:2]                    # Select first two rows
+data[data.mark=='Good']     # Select row when the mark is 'Good'
+data[data['year'] == 2000]  # Select row when the year is 2000
+
+# Select 'Good' mark row and year and mark columns
+
+data.loc[
+  data.mark =='Good',
+  ['year', 'mark']
+]
+
+# Select all rows and year and mark columns
+
+data.loc[
+  :,
+  ['year','mark']
+]
+
+# Select 'Good' mark row and year and mark columns
+
+data.iloc[0,[1,2]]
+
+# Select 'Average' and 'Very good' marks row and all columns
+
+data.iloc[[1,2],[2,0,1]]
+
+```
