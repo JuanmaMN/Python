@@ -12,3 +12,6 @@ New repository for Python analyses.
 ### Numpy package
 
 -  Link to my folder with analyses using [Numpy package](https://github.com/JuanmaMN/Python/tree/master/numpy)
+
+
+### Data visualization with matplotlib and seaborn
