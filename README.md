@@ -16,4 +16,4 @@ New repository for Python analyses.
 
 ### Data visualization with matplotlib and seaborn
 
--Link to my folder with analyses using [Matplot & seaborn](https://github.com/JuanmaMN/Python/blob/master/data_visualization/matplotlib_seaborn.md)
+- Link to my folder with analyses using [Matplot & seaborn](https://github.com/JuanmaMN/Python/blob/master/data_visualization/matplotlib_seaborn.md)
