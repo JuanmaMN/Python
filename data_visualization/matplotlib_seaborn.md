@@ -61,4 +61,3 @@ nba_scatter.set_title('Wins vs. Points')
 plt.show()
 ```
 
-plt.show()```
