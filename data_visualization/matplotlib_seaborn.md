@@ -20,8 +20,9 @@ pd.set_option('max_columns', 200)
 nba = pd.read_excel("NBA_team_data.xlsx")
 ```
 
+## Visualizations
 
-## Bar chart    
+#### Bar chart    
 
 ```
 nba_graph = nba[['TEAM','W']] \
@@ -33,3 +34,31 @@ plt.xlabel('Wins')
 plt.title('Number of victories by Team')
 plt.show()
 ```
+
+
+#### Scatter plot with Matplotlib
+
+```
+nba.plot(kind='scatter',
+          x = 'W',
+          y = 'PTS',
+          title = 'Wins vs Points')
+plt.show()
+```
+
+
+#### Scatter plot with Seaborn
+
+```
+nba_scatter = sns.scatterplot(
+            x = 'W',
+          y = 'PTS',
+          hue = 'L',
+          data=nba
+)
+
+nba_scatter.set_title('Wins vs. Points')
+plt.show()
+```
+
+plt.show()```
