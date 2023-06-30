@@ -13,7 +13,10 @@ New repository for Python analyses.
 
 <br>
 
-## Numpy package
+## <img width="30" alt="Energy production SA" src="https://github.com/JuanmaMN/Python/assets/37122520/64221689-a982-4f35-a1c0-f835a1cc0628"> Numpy package
+
+
+
 
 -  Link to my folder with analyses using [Numpy package](https://github.com/JuanmaMN/Python/tree/master/numpy)
 
