@@ -30,7 +30,7 @@ New repository for Python analyses.
 ## :chart_with_upwards_trend:	Data visualization with matplotlib and seaborn
 
 
-#### [Data visualizatioN folder link](https://github.com/JuanmaMN/Python/tree/master/data_visualization)
+#### [Data visualization folder link](https://github.com/JuanmaMN/Python/tree/master/data_visualization)
 
 
 - Data visualization practice with NBA data [Matplot & seaborn](https://github.com/JuanmaMN/Python/blob/master/data_visualization/matplotlib_seaborn.md)
