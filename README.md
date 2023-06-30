@@ -4,7 +4,7 @@ New repository for Python analyses.
 
 <br>
 
-## Pandas package [folder link](https://github.com/JuanmaMN/Python/tree/master/pandas)
+## :panda_face:	Pandas package [folder link](https://github.com/JuanmaMN/Python/tree/master/pandas)
   
 -  Pandas practice with Series and Data frames [link](https://github.com/JuanmaMN/Python/blob/master/pandas/DataFrameandSeries.md)
 
