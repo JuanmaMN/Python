@@ -31,7 +31,6 @@ healthexp_two = healthexp.loc[
 
 sns.lineplot(data=healthexp_two, x="Year", y="Spending_USD", hue="Country")
 plt.show()
-
 ```
 
 <img width="596" alt="lineplot" src="https://github.com/JuanmaMN/Python/assets/37122520/91086aa7-0905-416a-b5a8-f80c857ff0ff">
