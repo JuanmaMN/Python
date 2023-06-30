@@ -1,4 +1,4 @@
--- Note: This code has been run on Posit (previously known as R Studio). I saved the "NBA team data" file in the working directory.
+-- Note: This code has been run on Posit (previously known as R Studio). 
 
 
 ##  Import packages    
