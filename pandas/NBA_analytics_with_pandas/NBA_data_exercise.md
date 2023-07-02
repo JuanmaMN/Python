@@ -161,6 +161,31 @@ nba.sort_values(by=['W','PTS'], ascending=False,inplace=True) #inplace can be us
 nba.sort_values(by=['W','PTS'], ascending = False, na_position = 'first')  # Put NAs first
 ```
 
+#### Return the top three in wins
+
+```
+nba.sort_values('W', ascending = False).head(3)
+
+nba.sort_values('W', ascending = False) \
+   .head(3)
+
+```
+   
+
+### Return the lowest three in wins
+
+```
+nba.sort_values('W', ascending = True).head(3)
+
+nba.sort_values('W', ascending = True) \
+    .head(3)
+
+nba.sort_values('W', ascending = False).tail(3)
+
+nba.sort_values('W', ascending = False) \
+    .tail(3)
+
+``` 
 
 #### Group by 
 
