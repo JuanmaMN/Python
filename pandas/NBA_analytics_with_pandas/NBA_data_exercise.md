@@ -171,8 +171,7 @@ nba.sort_values('W', ascending = False) \
 
 ```
    
-
-### Return the lowest three in wins
+#### Return the lowest three in wins
 
 ```
 nba.sort_values('W', ascending = True).head(3)
