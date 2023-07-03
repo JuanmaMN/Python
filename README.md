@@ -38,4 +38,4 @@ Data visualization folder with code with some exercises.
 
 - Data visualization practice with NBA data [Matplot & seaborn](https://github.com/JuanmaMN/Python/blob/master/data_visualization/matplotlib_seaborn.md)
   
-- Seaborn practice with sns data [link](https://github.com/JuanmaMN/Python/edit/master/data_visualization/matplotlib_seaborn.md)
+- Seaborn practice with sns data [link](https://github.com/JuanmaMN/Python/blob/master/data_visualization/Seaborn_graphs.md)
