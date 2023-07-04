@@ -1,6 +1,6 @@
 # Welcome to my Python repository
 
-New repository for Python analyses.
+New repository for Python analyses using pandas, numpy and visualization graphs.
 
 <br>
 
