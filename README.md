@@ -6,7 +6,7 @@ New repository for Python analyses using pandas, numpy and visualization graphs.
 
 ## <img width="30" alt="pandas"  src="https://github.com/JuanmaMN/Python/assets/37122520/9a156588-ca42-4647-9ae4-fae15ed7d38e">  	Pandas package 
 <br>
-Pandas folder with code for data exploration, cleaning. 
+Pandas folder with code for data exploration and cleaning. 
 
 #### [Pandas folder link](https://github.com/JuanmaMN/Python/tree/master/pandas)
 
